@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - KalenderDot</title>
+    <!-- Font Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dot-red: #ea4335;
+            --dot-yellow: #f4b400;
+            --dot-blue: #0088ff;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 30px 30px;
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Representasi Visual Ikon Dot */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .dot {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+        }
+
+        .dot-red { background-color: var(--dot-red); }
+        .dot-yellow { background-color: var(--dot-yellow); }
+        .dot-blue { background-color: var(--dot-blue); }
+
+        .app-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        .package-name {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            font-family: monospace;
+            background: #f1f5f9;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        .doc-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--dot-blue);
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .intro {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--dot-blue);
+        }
+
+        .section p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 18px;
+        }
+
+        .section ul li {
+            position: relative;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+
+        .section ul li::before {
+            content: "•";
+            color: var(--dot-yellow);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: -14px;
+            top: -2px;
+        }
+
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid var(--dot-blue);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            color: #1e3a8a;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 24px;
+            background-color: #f8fafc;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .footer a {
+            color: var(--dot-blue);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 15px 10px; }
+            .content { padding: 25px 18px; }
+            .header { padding: 30px 18px 20px; }
+            .app-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header dengan Tiga Titik Sesuai Ikon -->
+    <div class="header">
+        <div class="icon-container">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-blue"></div>
+        </div>
+        <h1 class="app-title">KalenderDot</h1>
+        <div class="package-name">pixeldev.kalenderdot</div>
+        <div class="doc-title">Kebijakan Privasi</div>
+    </div>
+
+    <!-- Konten Utama Kebijakan Privasi -->
+    <div class="content">
+        <p class="intro">
+            Terima kasih telah menggunakan <strong>KalenderDot</strong>. Kami sangat menghargai kepercayaan Anda dan berkomitmen penuh untuk melindungi privasi serta keamanan data pribadi Anda. Kebijakan Privasi ini menjelaskan bagaimana aplikasi kami mengelola data Anda.
+        </p>
+
+        <div class="highlight-box">
+            <p>🔒 <strong>Prinsip Utama Privasi Kami:</strong> Seluruh catatan kegiatan dan data Anda tersimpan 100% secara lokal di perangkat Anda sendiri. Kami tidak memiliki server eksternal dan tidak pernah mengumpulkan atau menjual data pribadi Anda.</p>
+        </div>
+
+        <div class="section">
+            <h2>1. Pengumpulan dan Penyimpanan Data</h2>
+            <p><strong>KalenderDot</strong> dirancang sebagai aplikasi yang mengutamakan privasi penuh penggunanya:</p>
+            <ul>
+                <li><strong>Penyimpanan Lokal:</strong> Semua data kegiatan yang Anda catat menggunakan indikator visual dot tersimpan langsung di dalam penyimpanan internal perangkat Anda.</li>
+                <li><strong>Tanpa Server Eksternal:</strong> Kami tidak menyediakan atau menggunakan server cloud untuk memproses, menyimpan, atau mencadangkan data Anda secara otomatis.</li>
+                <li><strong>Tanpa Akun:</strong> Aplikasi ini tidak memerlukan pendaftaran akun, pembuatan profil, atau login menggunakan alamat email/layanan pihak ketiga.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>2. Fitur Berbagi Data (Share)</h2>
+            <p>Aplikasi ini menyediakan fitur opsional bagi Anda untuk membagikan catatan kegiatan Anda:</p>
+            <ul>
+                <li><strong>Ekspor Gambar:</strong> Anda dapat mengunduh atau membagikan ringkasan visual kegiatan Anda dalam bentuk file gambar (image).</li>
+                <li><strong>Ekspor/Impor JSON:</strong> Anda dapat mencadangkan atau memindahkan data kegiatan Anda sendiri menggunakan file format <code>.JSON</code>.</li>
+            </ul>
+            <p>Proses pembagian data ini sepenuhnya berada di bawah kendali Anda. File gambar atau JSON hanya disebarkan ke platform atau aplikasi lain jika Anda sendiri yang memilih untuk membagikannya.</p>
+        </div>
+
+        <div class="section">
+            <h2>3. Pembelian Aplikasi (Model Berbayar)</h2>
+            <p><strong>KalenderDot</strong> adalah aplikasi berbayar sekali beli (pay once) dengan harga terjangkau tanpa biaya tersembunyi. Transaksi pembayaran Anda diproses secara aman oleh Google Play Store. Kami tidak pernah menyimpan atau memiliki akses ke informasi finansial, kartu kredit, atau rekening bank Anda.</p>
+        </div>
+
+        <div class="section">
+            <h2>4. Izin Perangkat (Permissions)</h2>
+            <p>Aplikasi ini hanya meminta izin perangkat yang relevan untuk mendukung fungsi utamanya, seperti akses penyimpanan media (hanya jika diperlukan saat Anda menyimpan/mengeksport gambar atau file <code>.JSON</code> ke memori ponsel Anda).</p>
+        </div>
+
+        <div class="section">
+            <h2>5. Perubahan Kebijakan Privasi</h2>
+            <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu jika terdapat pembaruan fitur pada aplikasi. Perubahan akan selalu ditampilkan pada halaman ini dengan tanggal pembaruan yang disesuaikan.</p>
+        </div>
+
+        <div class="section">
+            <h2>6. Hubungi Kami</h2>
+            <p>Jika Anda memiliki pertanyaan, saran, atau masukan terkait aplikasi <strong>KalenderDot</strong> maupun Kebijakan Privasi ini, silakan hubungi kami melalui:</p>
+            <ul>
+                <li><strong>Pengembang:</strong> PixelDev</li>
+                <li><strong>Email:</strong> <a href="mailto:pixeldev.dnd@gmail.com">pixeldev.dnd@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 PixelDev (KalenderDot). Seluruh hak cipta dilindungi.</p>
+        <p style="margin-top: 5px; font-size: 0.8rem; color: #94a3b8;">Terakhir diperbarui: 5 November 2026</p>
+    </div>
+</div>
+
+</body>
+</html>
